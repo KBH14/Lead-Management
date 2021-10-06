@@ -1,0 +1,253 @@
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <span class="font">Lead Calling</span>
+                </div>
+                <div class="card-body ">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 dbox">
+                            <div class="card123">
+                                <h3><i class="fa fa-star" aria-hidden="true"></i>&nbsp;Lead Calling</h3>
+                                &nbsp; <i class="far fa-envelope">&nbsp;Sajan</i><br>
+                                &nbsp; <i class="fas fa-mobile-alt">&nbsp;123456789</i><br>
+                                &nbsp; <i class="fas fa-map-marker-alt">&nbsp;Bengaluru,Karnataka,India</i><br>
+                                &nbsp; <i class="far fa-building">&nbsp;software.pvt.ltd</i>
+                            </div><br>
+
+                            <button mat-raised-button class="pull-right">Edit Comment</button>
+                            <textarea rows="4" cols="58" name="comment" form="usrform">Comments...</textarea><br>
+
+                            <button mat-raised-button class="pull-right">Modify Tags</button>
+                            <textarea rows="4" cols="58" name="comment" form="usrform">Tags...</textarea><br>
+
+                            <table>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Source</th>
+                                    <th>Process State</th>
+                                    <th>AutoDial</th>
+                                </tr>
+                                <tr>
+                                    <td>Test</td>
+                                    <td><a class="btn btn-sm btn-primary">web</a></td>
+                                    <td>Staff_State2</td>
+                                    <td><i class="fas fa-check btn-success fa-lg"></i></td>
+                                </tr>
+                            </table><br>
+
+                            <table>
+                                <tr>
+                                    <th>Schedule</th>
+                                    2020-08-31 10:56:47
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-lg-8 dbox">
+                            <form class="form-inline">
+                                &nbsp;&nbsp;
+                                <button class="btn btn-outline-secondary fas fa-mobile-alt" type="button"
+                                    (click)="btn_sms()"></button>&nbsp;
+                                <button class="btn btn-outline-secondary fas fa-phone-alt btn-success"
+                                    type="button"></button>&nbsp;
+                                <button class="btn btn-outline-secondary fas fa-envelope" type="button"
+                                    (click)="btn_email()"></button>&nbsp;
+                                <button class="btn btn-outline-secondary fas fas fa-minus" type="button"></button>&nbsp;
+                                <button class="btn btn-outline-secondary fas fas fa-times"
+                                    type="button"></button>&nbsp;&nbsp;
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="yyyy-mm-dd" name="dp"
+                                            [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary far fa-calendar-alt"
+                                                (click)="d.toggle()" type="button"></button>
+                                            <button class="btn btn-outline-secondary fas fa-greater-than"
+                                                type="button"></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                &nbsp;&nbsp;
+                                <button type="button" class="btn btn-success" (click)="btn_success()">Success Follow
+                                    Up</button>&nbsp;&nbsp;
+                                <button type="button" class="btn btn-danger">Fail Follow Up</button>
+                            </form><br>
+
+                            <mat-divider></mat-divider>
+
+                            <mat-card>
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-thumb-tack"
+                                                aria-hidden="true"></i>&nbsp;Remark:</a><br>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-phone"
+                                                aria-hidden="true"></i>&nbsp;Call Time:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-star"
+                                                aria-hidden="true"></i>&nbsp;New Status:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-calendar-o"
+                                                aria-hidden="true"></i>&nbsp;Schedule:</a><br>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-microphone"
+                                                aria-hidden="true"></i>&nbsp;Duration:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-user"
+                                                aria-hidden="true"></i>&nbsp;TeleCaller:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-user"
+                                                aria-hidden="true"></i>&nbsp;Call Status:</a>
+                                    </div>
+                                </div>
+                            </mat-card>
+
+                            <mat-card style="background-color:rgb(213, 216, 211)">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-thumb-tack"
+                                                aria-hidden="true"></i>&nbsp;Remark:</a><br>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-phone"
+                                                aria-hidden="true"></i>&nbsp;Call Time:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-star"
+                                                aria-hidden="true"></i>&nbsp;New Status:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-calendar-o"
+                                                aria-hidden="true"></i>&nbsp;Schedule:</a><br>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-microphone"
+                                                aria-hidden="true"></i>&nbsp;Duration:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-user"
+                                                aria-hidden="true"></i>&nbsp;TeleCaller:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-user"
+                                                aria-hidden="true"></i>&nbsp;Call Status:</a>
+                                    </div>
+                                </div>
+                            </mat-card>
+
+                            <mat-card>
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-thumb-tack"
+                                                aria-hidden="true"></i>&nbsp;Remark:</a><br>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-phone"
+                                                aria-hidden="true"></i>&nbsp;Call Time:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-star"
+                                                aria-hidden="true"></i>&nbsp;New Status:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-calendar-o"
+                                                aria-hidden="true"></i>&nbsp;Schedule:</a><br>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-microphone"
+                                                aria-hidden="true"></i>&nbsp;Duration:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-user"
+                                                aria-hidden="true"></i>&nbsp;TeleCaller:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-user"
+                                                aria-hidden="true"></i>&nbsp;Call Status:</a>
+                                    </div>
+                                </div>
+                            </mat-card>
+
+                            <mat-card style="background-color:rgb(213, 216, 211)">
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-thumb-tack"
+                                                aria-hidden="true"></i>&nbsp;Remark:</a><br>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-phone"
+                                                aria-hidden="true"></i>&nbsp;Call Time:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-star"
+                                                aria-hidden="true"></i>&nbsp;New Status:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-calendar-o"
+                                                aria-hidden="true"></i>&nbsp;Schedule:</a><br>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-microphone"
+                                                aria-hidden="true"></i>&nbsp;Duration:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-user"
+                                                aria-hidden="true"></i>&nbsp;TeleCaller:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-user"
+                                                aria-hidden="true"></i>&nbsp;Call Status:</a>
+                                    </div>
+                                </div>
+                            </mat-card>
+
+                            <mat-card>
+                                <div class="grid-container">
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-thumb-tack"
+                                                aria-hidden="true"></i>&nbsp;Remark:</a><br>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-phone"
+                                                aria-hidden="true"></i>&nbsp;Call Time:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-star"
+                                                aria-hidden="true"></i>&nbsp;New Status:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-calendar-o"
+                                                aria-hidden="true"></i>&nbsp;Schedule:</a><br>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-microphone"
+                                                aria-hidden="true"></i>&nbsp;Duration:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-user"
+                                                aria-hidden="true"></i>&nbsp;TeleCaller:</a>
+                                    </div>
+                                    <div class="grid-item">
+                                        <a class="font-weight-bold"><i class="fa fa-user"
+                                                aria-hidden="true"></i>&nbsp;Call Status:</a>
+                                    </div>
+                                </div>
+                            </mat-card>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

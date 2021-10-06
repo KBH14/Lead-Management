@@ -1,0 +1,119 @@
+<header>
+    <nav class="navbar header-nav custom-header-nav navbar-expand-lg bg-theme-gradient">
+        <div class="container">
+            <a class="navbar-brand" [routerLink]="['/ownerDashboard']">
+                <img src="http://www.snipe.co.in/images/logo.png" width="120" title="" alt="MMG">
+            </a>
+            <a class="text-white font-weight-bold d-lg-none d-sm-block d-md-block cursor-pointer"
+                href="tel:901 902 903 6">
+                <i class="fas fa-phone mr-2 rotate-icon"></i>901 902 903 6</a>
+            <a class="navbar-toggler d-none" aria-controls="navbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fas fa-bars text-white"></span>
+            </a>
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbar">
+                <div class="mr-auto pt-2 pl-3 border-left">
+                    <h5 class="text-white font-weight-bold cursor-pointer">
+                        <i class="fas fa-phone mr-2 rotate-icon"></i><a class="text-white" href="tel:901 902 903 6">901
+                            902 903 6</a></h5>
+                </div>
+                <ul class="navbar-nav ml-auto align-items-center">
+
+                    <li>
+                        <a class="nav-link" [routerLink]="['/dashboard']">Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" [routerLink]="['/lead']">Lead</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" [routerLink]="['/report']">Report</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" [routerLink]="['/auto-responder']">Auto Responder</a>
+                    </li>
+
+
+                    <!-- <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link" [routerLink]="['/lead']">Lead</a>
+                        <ul class="m-dropdown-menu">
+                            <li>
+                                <a [routerLink]="['/newLead']">New Lead</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/misscallLead']">Misscall lead </a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/advanceLeadAssign']">Advance lead assign</a>
+                            </li>
+                            <li><a [routerLink]="['/newLead']">Bulk lead</a> </li>
+                            <li>
+                                <a [routerLink]="['/newLead']">Auto Dail setting</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/newCategory']">New Category</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/newLeadState']">New lead State</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/leadSubState']"> Lead Sub State</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/leadSubState']">Default Lead Assign </a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/advanceLeadSearch']" >Advance Lead Searach </a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/extraFields']" > Extra Fields </a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link cursor-pointer"> Report</a>
+                        <ul class="m-dropdown-menu">
+                            <li>
+                                <a [routerLink]="['/newTelecaller']" >New Telecaller</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/liveTelecaller']">Live Telecaller</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link cursor-pointer">Auto Responder</a>
+                        <ul class="m-dropdown-menu">
+                            <li>
+                                <a [routerLink]="['/smsManagement']">SMS Management</a>
+
+                            </li>
+                            <li>
+                                <a [routerLink]="['/emailManagement']">EMAIL Management</a>
+                            </li>
+                        </ul>
+                    </li> -->
+
+                    <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link cursor-pointer"> <button mat-icon-button
+                                aria-label="Example icon button with a vertical three dot icon">
+                                <mat-icon>more_vert</mat-icon>
+                            </button></a>
+
+                        <ul class="m-dropdown-menu">
+                            <li>
+                                <a>Profile</a>
+                            </li>
+                            <li>
+                                <a class="cursor-pointer"><i class="fa fa-sign-out pull-right"></i>
+                                    Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>         
+     </nav>
+</header>

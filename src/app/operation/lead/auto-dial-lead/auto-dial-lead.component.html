@@ -1,0 +1,78 @@
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-header bg-light">
+
+                    <span class="font">Auto Dial Lead</span>
+
+                    <div class="pull-right m-20px-l">
+                    <button mat-flat-button color="accent" class="pull-right">
+                        <i class="fa fa-plus">&nbsp; Add All To auto Dial </i></button>
+                    </div>
+
+                    <div class="pull-right m-20px-l">
+                        <button mat-flat-button color="accent" class="pull-right">
+                            <i class="fa fa-remove">&nbsp;  Remove All From Auto Dail </i></button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="card-body ">
+                  <div> 
+                   <button mat-raised-button color="primary"(click)="backClicked()">
+                      <i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp;Back</button>
+                  </div><br>
+                    <div class="row no-gutters">
+                        <div class="justify-content-end">
+                          
+                            <mat-form-field>
+                                <mat-label>Search</mat-label>
+                                <input matInput (keyup)="applyFilter($event)" placeholder="www" #input>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="example-container table-bordered ">
+  
+                    <mat-table [dataSource]="dataSource"  matSort>
+        
+                      
+                      <ng-container matColumnDef="category">
+                        <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header class="tw-10"> Category
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let element" data-label="category">
+                          {{element.category}}
+                        </mat-cell>
+                      </ng-container>
+        
+                      <ng-container matColumnDef="leadcount">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header class="tw-15"> leadcount
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let element" data-label="leadcount" class="cursor-pointer">
+                          <u>{{element.leadcount}} </u>
+                        </mat-cell>
+                      </ng-container>
+                         
+                      <ng-container matColumnDef="action">
+                        <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header class="tw-10"> Action
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let element" data-label="action" class="cursor-pointer action-link">
+                          <a class="btn btn-sm btn-success" href=""> <i class="fa fa-pencil-square-o" title="Edit">&nbsp;</i>Add To Auto Dial </a> 
+                          &nbsp;&nbsp;&nbsp;&nbsp;
+                          <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-times"></i> Remove From Auto Dial</a>
+                        </mat-cell>
+                      </ng-container>
+                      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                      <mat-row *matRowDef="let row; columns: displayedColumns;">
+                      </mat-row>
+                    </mat-table>
+                    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+        
+                  </div>
+
+            </div>
+        </div>
+    </div>
+</div>

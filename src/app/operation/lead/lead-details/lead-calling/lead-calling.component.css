@@ -1,0 +1,50 @@
+.cbox
+{
+  height: 500px;
+}
+
+.dbox
+{
+  /* border: 1px dotted black; */
+  height: 630px;
+}
+
+.grid-container
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.card123
+{
+    background: #2e283a;
+    background: -webkit-linear-gradient(to right, #2e283a, #1662a8); 
+    background: linear-gradient(to right, #2e283a, #1662a8);
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-style: ridge;
+  }
+  
+  th {
+    height: 5px;
+    text-align: center;
+  }
+
+  td{
+      text-align: center;
+  }
+
+  td a{
+      color: white;
+  }
+
+  
+
+

@@ -1,0 +1,93 @@
+{
+  "show-all-lead":[
+    {
+      "id": 1,
+      "name":"showaaa",
+      "mobileNumber":123456,
+      "email":"aaacateory@gamil.com",
+      "category":"xyzzzzz",
+      "processState":"active"
+    },
+    {
+      "id": 2,
+      "name":"showbbb",
+      "mobileNumber":987654,
+      "email":"bbbcateory@gamil.com",
+      "category":"poiuy",
+      "processState":"active"
+    }
+  ],
+
+  "category-wise-lead":[
+    {
+      "id": 1,
+      "name":"categoryaaa",
+      "mobileNumber":123456,
+      "email":"aaacateory@gamil.com",
+      "category":"xyzzzzz",
+      "processState":"active"
+    },
+    {
+      "id": 2,
+      "name":"categorybbb",
+      "mobileNumber":987654,
+      "email":"bbbcateory@gamil.com",
+      "category":"poiuy",
+      "processState":"active"
+    }
+  ],
+
+    "auto-dial-lead":[
+      {
+        "category":"autovvv",
+        "leadcount":1
+      },
+      {
+        "category":"autoqqq",
+        "leadcount":2
+      },
+      {
+        "category":"autovvv",
+        "leadcount":3
+      },
+      {
+        "category":"autoqqq",
+        "leadcount":4
+      },
+      {
+        "category":"autovvv",
+        "leadcount":5
+      },
+      {
+        "category":"autoqqq",
+        "leadcount":6
+      },
+      {
+        "category":"autovvv",
+        "leadcount":7
+      },
+      {
+        "category":"autoqqq",
+        "leadcount":8
+      }
+    ],
+
+  "email-log":[
+    {
+      "customername":"emailaaa",
+      "phone":123456,
+      "email":"email@gamil.com",
+      "mailsubject":"xyzzzzz",
+      "date":"1/2/2020",
+      "mailstatus":"abcdefg"
+    },
+    {
+      "customername":"emailbbb",
+      "phone":987,
+      "email":"aaa@gamil.com",
+      "mailsubject":"erex",
+      "date":"9/2/2020",
+      "mailstatus":"ztycdefg"
+    }
+  ]
+}

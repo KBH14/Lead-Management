@@ -1,0 +1,35 @@
+.page-area
+{
+  align-items: center;
+  text-align: center;
+}
+
+.mat-card
+{
+    display: inline-block;
+    margin: 0 10px 10px; 
+    width: 12.5%;  
+    height:180px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.mat-card .all-call-log
+{
+    color: blue
+}
+
+.mat-card .success-call-log
+{
+    color: green;
+}
+
+.mat-card .fail-call-log
+{
+    color: red;
+}
+
+.mat-card .today-call-summery
+{
+    color: rgb(189, 189, 75);
+}

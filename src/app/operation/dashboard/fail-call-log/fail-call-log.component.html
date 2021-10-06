@@ -1,0 +1,106 @@
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <span class="font">Fail Call Log</span>
+                </div>
+                <br>
+               
+                <div class="col-lg-2 col-md-6 col-sm-6" class="pull-right">
+                  <div class="matt" >
+                    <mat-form-field appearance="fill" class="pull-right">
+                      <mat-label>Choose a date</mat-label>
+                      <input matInput [matDatepicker]="picker">
+                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                      <mat-datepicker #picker ></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                </div>       
+                <div class="card-body " >
+                  <div class="row no-gutters" class="pull-right">
+                      <div class="justify-content-end" >
+                          <mat-form-field>
+                              <mat-label>Search</mat-label>
+                              <input matInput placeholder="" #input>
+                          </mat-form-field>
+                      </div>
+                  </div>
+                  <!-- <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                    <mat-button-toggle value="bold">PDF</mat-button-toggle>&nbsp;
+                    <mat-button-toggle value="italic">CSV</mat-button-toggle>&nbsp;
+                    <mat-button-toggle value="underline">Excel</mat-button-toggle>
+                  </mat-button-toggle-group>
+                   -->
+                      <button mat-raised-button color="primary">PDF</button>&nbsp;
+                      <button mat-raised-button color="primary">CSV</button>&nbsp;
+                      <button mat-raised-button color="primary">Excel</button>
+                      <br>
+                      <br>
+                      <br>
+                      <div class="example-container table-bordered ">
+                        <mat-table [dataSource]="dataSource" matSort>
+            
+                          <ng-container matColumnDef="id">
+                            <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header class="tw-10"> Telecaller Name
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let element" data-label="id">
+                              {{element.id}}
+                            </mat-cell>
+                          </ng-container>
+            
+                          <ng-container matColumnDef="name">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header class="tw-15"> Customer Name
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let element" data-label="name" class="cursor-pointer">
+                              {{element.name}}
+                            </mat-cell>
+                          </ng-container>
+            
+                          <ng-container matColumnDef="email">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header class="tw-15">Mobile No.
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let element" data-label="email" class="cursor-pointer">
+                              <u>{{element.lastName}} </u>
+                            </mat-cell>
+                          </ng-container>
+            
+                          <ng-container matColumnDef="mobileNumber">
+                            <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header class="tw-10">
+                              Call Duration
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let element" data-label="mobileNumber">
+                              {{element.mobileNumber}}
+                            </mat-cell>
+                          </ng-container>
+            
+                          <ng-container matColumnDef="category">
+                            <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header class="tw-20">
+                              Call Time
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let element" data-label="category">
+                              {{element.category}}
+                            </mat-cell>
+                          </ng-container>
+            
+                          <ng-container matColumnDef="processState">
+                            <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header class="tw-40">Call Status
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let element" data-label="processState"> {{element.processState}}
+                            </mat-cell>
+                          </ng-container>
+            
+                          <ng-container matColumnDef="Action">
+                            <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header class="tw-10"> Remark
+                            </mat-header-cell>
+                          </ng-container>
+                          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                          <mat-row *matRowDef="let row; columns: displayedColumns;">
+                          </mat-row>
+                        </mat-table>
+                        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

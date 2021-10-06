@@ -1,0 +1,30 @@
+<div class="footer-dark">
+    <div class="card-header">
+      <div class="stats-block">
+        <h3>SMS Template 
+          <button mat-button class="close-icon" [mat-dialog-close]="true" class="pull-right">
+           <mat-icon>close</mat-icon>
+          </button>
+        </h3>     
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+  <div class="form">
+    <mat-form-field appearance="">
+        <mat-label>Select Template</mat-label>
+        <mat-select>
+            <mat-option value="option">Tele Marketing</mat-option>
+        </mat-select>
+    </mat-form-field><br><br>
+  </div>
+  
+
+
+  <mat-dialog-actions class="pull-right">
+    <button mat-raised-button color="accent">Send SMS</button>&nbsp;
+    <button mat-raised-button mat-dialog-close color="accent">Close</button>
+    
+  </mat-dialog-actions>

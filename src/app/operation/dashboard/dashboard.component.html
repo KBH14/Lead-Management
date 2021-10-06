@@ -1,0 +1,133 @@
+<!-- <div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="card">
+        <div class="card-header bg-light">
+          <span class="font">Dashboard</span>
+        </div>
+        <div class="card-body ">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card bg-white mb-3 mat-elevation-z2" [routerLink]="['/allcalllogcomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-th-list fa-4x"></i>
+                      </div>
+                      <div class=" col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">All Call Log</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/successcalllogcomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-check-circle fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Success Call Log</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/failcalllogcomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-sync fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Fail Call Log</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/todaycallsummerycomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-user-circle fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Today Call Summery</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="card">
+  <div class="card-header bg-light">
+    <span class="font">Dashboard</span>
+  </div> <br>
+
+  <div class="page-area">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="mat-card">
+          <div class="card-body">
+            <br>
+            <div class="all-call-log">
+              All Call Log
+            </div>              
+            <br>
+            <button type="button" class="btn btn-primary" [routerLink]="['/allcalllogcomponent']">Open</button>
+          </div>
+        </div>
+
+        <div class="mat-card">
+          <div class="card-body">
+            <br>
+            <div class="success-call-log">
+              Success Call Log
+            </div>              
+            <br>
+            <button type="button" class="btn btn-success" [routerLink]="['/successcalllogcomponent']">Open</button>
+          </div>
+        </div>
+
+        <div class="mat-card">
+          <div class="card-body">
+            <br>
+            <div class="fail-call-log">
+              Fail Call Log
+            </div>              
+            <br>
+            <button type="button" class="btn btn-danger" [routerLink]="['/failcalllogcomponent']">Open</button>
+          </div>
+        </div>
+
+        <div class="mat-card">
+          <div class="card-body">
+            <br>
+            <div class="today-call-summery">
+              Today Call Summery
+            </div>              
+            <br>
+            <button type="button" class="btn btn-warning" [routerLink]="['/todaycallsummerycomponent']">Open</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+</div>

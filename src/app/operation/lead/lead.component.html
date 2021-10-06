@@ -1,0 +1,202 @@
+<div class="container-fluid mt-4">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="card-header bg-light">
+            <span class="font">Lead</span>
+          </div>
+  
+          <div class="card-body ">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card bg-white mb-3 mat-elevation-z2"  [routerLink]="['/showallleadscomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-th-list fa-4x"></i>
+                      </div>
+                      <div class=" col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <!-- <div class="large" id="name">{{com.name}}</div> -->
+                        <div class="text-muted">Show All Leads</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/categorywiseleadcomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">  
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-check-circle fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Category Wise Lead</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/autodialleadcomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-sync fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Auto Dial Lead</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/unattendedleadcomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-user-circle fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Unattended Lead</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/successstateleadscomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-flag fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Success State Leads</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/failstateleadscomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-ban fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Fail State Leads</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/todayleadcomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-list-alt fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Today Lead</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/duetodaycomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-calendar-alt fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Due Today</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/manageautodialleadcomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-puzzle-piece fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Manage Auto Dial Lead</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/failcallscomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-times-circle fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Fail calls</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/emaillogcomponent']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-envelope fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Email Log</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card text-black bg-white mb-3 mat-elevation-z2" [routerLink]="['/lead-details']">
+                  <div class="card-body cursor-pointer">
+                    <div class="row">
+                      <div class="col-5 col-md-4 pull-left">
+                        <i class="fa fa-info-circle fa-4x"></i>
+                      </div>
+                      <div class="col-7 col-md-8 pull-right">
+                        <div class="large" id="totalLead">18</div>
+                        <div class="text-muted">Lead Details</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

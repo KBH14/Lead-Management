@@ -1,0 +1,51 @@
+<div class="footer-dark">
+    <div class="card-header">
+        <div class="stats-block">
+            <h3>Success Follows Up
+                <button mat-button class="close-icon" [mat-dialog-close]="true" class="pull-right">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </h3>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="form">
+    Responce: &nbsp;&nbsp;&nbsp;
+    <mat-form-field appearance="">
+        <mat-label>Select State</mat-label>
+        <mat-select>
+            <mat-option value="option">Option</mat-option>
+        </mat-select>
+    </mat-form-field><br>
+
+    Lead State: &nbsp;&nbsp;&nbsp;
+    <mat-form-field appearance="">
+        <mat-label>In Process</mat-label>
+        <mat-select>
+            <mat-option value="option">Option</mat-option>
+        </mat-select>
+    </mat-form-field><br>
+
+    <!-- <mat-checkbox [formControl]="hideRequiredControl"></mat-checkbox> -->
+    Schedule: &nbsp;&nbsp;&nbsp;&nbsp;
+    <mat-form-field appearance="">
+        <mat-label></mat-label>
+        <input matInput>
+    </mat-form-field><br>
+
+    Remark: &nbsp;&nbsp;&nbsp;
+    <mat-form-field appearance="">
+        <mat-label></mat-label>
+        <textarea matInput></textarea>
+
+    </mat-form-field>
+</div>
+
+<mat-dialog-actions class="pull-right">
+    <a class="btn btn-sm btn-danger"> <i class="fa fa-times" title="close"></i> </a> &nbsp;&nbsp;
+    <a class="btn btn-sm btn-success"> <i class="fa fa-user" title="user"></i> </a>&nbsp;&nbsp;
+    <button mat-raised-button color="accent">Save</button>&nbsp;
+    <button mat-raised-button mat-dialog-close color="accent">Close</button>
+</mat-dialog-actions>

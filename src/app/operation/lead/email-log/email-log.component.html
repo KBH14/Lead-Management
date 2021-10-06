@@ -1,0 +1,118 @@
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <!-- <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; -->
+                    <span class="font">Email-log</span>
+                    <mat-form-field color="accent" appearance="legacy" class="pull-right">
+                      <mat-label>Pick a Date</mat-label>
+                      <input matInput [matDatepicker]="picker2">
+                      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                      <mat-datepicker #picker2 color="primary"></mat-datepicker>
+                  </mat-form-field>
+                </div>
+                <div class="card-body ">
+                  <div>
+                    <button mat-raised-button color="primary"(click)="backClicked()">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp;Back</button>
+                    </div><br>
+                    <div class="row no-gutters">
+                      <div class="justify-content-end">
+                        <mat-form-field>
+                          <mat-label>Search</mat-label>
+                          <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+          
+                        </mat-form-field>
+                        <div>
+                            <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                                <mat-button-toggle value="bold">PDF</mat-button-toggle>
+                                <mat-button-toggle value="bold">CSV</mat-button-toggle>
+                                <mat-button-toggle value="bold">Excel</mat-button-toggle>
+                            </mat-button-toggle-group>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    
+                    <div class="example-container table-bordered ">
+          
+                      <mat-table [dataSource]="dataSource"  matSort> 
+          
+                        <!-- Agent Code Column -->
+                        <ng-container matColumnDef="customername">
+                          <mat-header-cell mat-header-cell *matHeaderCellDef mat-sort-header class="tw-10">Customer Name
+                          </mat-header-cell>
+                          <mat-cell *matCellDef="let element" data-label="name">
+                            {{element.customername}}
+                          </mat-cell>
+                        </ng-container>
+          
+                        <ng-container matColumnDef="phone">
+                          <mat-header-cell *matHeaderCellDef mat-sort-header class="tw-15"> Mobile No.
+                          </mat-header-cell>
+                          <mat-cell *matCellDef="let element" data-label="phone" class="cursor-pointer">
+                            {{element.phone}}
+                          </mat-cell>
+                        </ng-container>
+          
+                        <ng-container matColumnDef="email">
+                          <mat-header-cell *matHeaderCellDef mat-sort-header class="tw-15"> Email ID
+                          </mat-header-cell>
+                          <mat-cell *matCellDef="let element" data-label="email" class="cursor-pointer">
+                            <u>{{element.email}} </u>
+                          </mat-cell>
+                        </ng-container>
+          
+                        <ng-container matColumnDef="mailsubject">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header class="tw-15"> Mail Subject
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let element" data-label="text" class="cursor-pointer">
+                              <u>{{element.mailsubject}} </u>
+                            </mat-cell>
+                          </ng-container>
+
+                          <ng-container matColumnDef="date">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header class="tw-15"> Send Date
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let element" data-label="text" class="cursor-pointer">
+                              <u>{{element.date}} </u>
+                            </mat-cell>
+                          </ng-container>
+
+                          <ng-container matColumnDef="mailstatus">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header class="tw-15"> Mail Status
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let element" data-label="text" class="cursor-pointer">
+                              <u>{{element.mailstatus}} </u>
+                            </mat-cell>
+                          </ng-container>
+
+                          <ng-container matColumnDef="attachment">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header class="tw-15"> Attachment
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let element" data-label="text" class="cursor-pointer">
+                                <a class="btn btn-sm btn-success" href=""> <i class="fa fa-download" title="Download"></i></a>
+                            </mat-cell>
+                          </ng-container>
+          
+                          <ng-container matColumnDef="view">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header class="tw-15"> View
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let element" data-label="view" class="cursor-pointer">
+                              <a class="btn btn-sm btn-success" href=""> <i class="fa fa-arrows-alt" title="View"></i></a>
+                            </mat-cell>
+                          </ng-container>
+
+                        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                        <mat-row *matRowDef="let row; columns: displayedColumns;">
+                        </mat-row>
+                      </mat-table>
+                      <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
